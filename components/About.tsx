@@ -16,7 +16,7 @@ const About: React.FC<SectionProps> = ({ id }) => {
     <section id={id} className="py-24 bg-white dark:bg-slate-950">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row gap-16 items-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -24,9 +24,9 @@ const About: React.FC<SectionProps> = ({ id }) => {
           >
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-primary-500 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-              <img 
-                src="https://picsum.photos/seed/dev/600/700" 
-                alt="Developer Working" 
+              <img
+                src="https://picsum.photos/seed/dev/600/700"
+                alt="Developer Working"
                 className="relative rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
               />
               <div className="absolute bottom-6 left-6 p-6 glass-card rounded-xl text-white">
@@ -36,7 +36,7 @@ const About: React.FC<SectionProps> = ({ id }) => {
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -47,14 +47,14 @@ const About: React.FC<SectionProps> = ({ id }) => {
               About Me
             </h2>
             <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-              Hello! I'm Alex, a passionate Full Stack Developer with a knack for turning 
-              complex problems into simple, beautiful digital solutions. My journey started 
-              with curiosity about how the web works, which evolved into a career dedicated 
+              Hello! I'm Riyan, a passionate Full Stack Developer with a knack for turning
+              complex problems into simple, beautiful digital solutions. My journey started
+              with curiosity about how the web works, which evolved into a career dedicated
               to building meaningful products.
             </p>
             <p className="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to 
-              open-source projects, or sharing my knowledge through technical blogging. 
+              When I'm not coding, you'll find me exploring new technologies, contributing to
+              open-source projects, or sharing my knowledge through technical blogging.
               I believe in continuous learning and the power of collaborative development.
             </p>
 

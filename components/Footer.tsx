@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-slate-50 dark:border-slate-900 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400 uppercase tracking-widest">
-          <p>© {currentYear} Alex Dev. All rights reserved.</p>
+          <p>© {currentYear} Riyan Dev. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="hover:text-primary-500 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-primary-500 transition-colors">Terms of Service</a>
