@@ -84,11 +84,12 @@ const Hero: React.FC = () => {
                 Let's Talk
               </a>
               <a
-                href="/cv.pdf"
-                download
+                href="https://drive.google.com/file/d/1NHG0_3wyAx5F3tMuFkotWOCioRCMM2M9/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-3 bg-primary-100 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 font-bold rounded-xl hover:bg-primary-200 dark:hover:bg-primary-900/40 transition-all flex items-center group text-sm"
               >
-                Download CV
+                View Resume
                 <Download className="ml-2 group-hover:translate-y-1 transition-transform" size={18} />
               </a>
             </div>
