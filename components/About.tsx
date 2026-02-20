@@ -30,8 +30,8 @@ const About: React.FC<SectionProps> = ({ id }) => {
                 className="relative rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
               />
               <div className="absolute bottom-6 left-6 p-6 glass-card rounded-xl text-white">
-                <p className="text-3xl font-bold">5+</p>
-                <p className="text-sm opacity-80 uppercase tracking-tighter">Years of Experience</p>
+                <p className="text-2xl font-bold">Fresher</p>
+                <p className="text-xs opacity-80 uppercase tracking-tighter">Ready to Contribute</p>
               </div>
             </div>
           </motion.div>
@@ -46,16 +46,17 @@ const About: React.FC<SectionProps> = ({ id }) => {
               <span className="w-12 h-1 bg-primary-500 inline-block mr-4 rounded-full"></span>
               About Me
             </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-              Hello! I'm Riyan, a passionate Full Stack Developer with a knack for turning
-              complex problems into simple, beautiful digital solutions. My journey started
-              with curiosity about how the web works, which evolved into a career dedicated
-              to building meaningful products.
+            <p className="text-lg text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+              Hi, I’m a self-employed and motivated Full Stack Developer (Fresher) with hands-on experience in building real-world and academic projects. During my time at NavGurukul, I developed projects like Long Leave Management System and Smart Attendance System to solve practical problems.
             </p>
-            <p className="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to
-              open-source projects, or sharing my knowledge through technical blogging.
-              I believe in continuous learning and the power of collaborative development.
+            <p className="text-lg text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+              I have also built an e-commerce furniture website, multiple web pages, and my own portfolio website.
+            </p>
+            <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+              I am passionate about coding, continuously improving my technical and problem-solving skills, and delivering clean and efficient solutions. I follow a disciplined work approach and always complete tasks on time.
+            </p>
+            <p className="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed font-medium text-primary-600 dark:text-primary-400">
+              Currently, I am seeking an internship opportunity where I can apply my skills in a professional environment and contribute to real-world projects.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

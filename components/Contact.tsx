@@ -23,7 +23,7 @@ const Contact: React.FC<SectionProps> = ({ id }) => {
 
   const contactInfo = [
     { icon: <Mail size={20} />, label: 'Email', value: 'riyanramteke17@gmail.com', href: 'mailto:riyanramteke17@gmail.com' },
-    { icon: <Phone size={20} />, label: 'Phone', value: '+1 (555) 000-0000', href: 'tel:+15550000000' },
+    { icon: <Phone size={20} />, label: 'Phone', value: '+91 7498895425', href: 'tel:+917498895425' },
     { icon: <MapPin size={20} />, label: 'Location', value: 'Nagpur, Maharashtra', href: '#' },
   ];
 
@@ -54,6 +54,8 @@ const Contact: React.FC<SectionProps> = ({ id }) => {
                     key={idx}
                     href={info.href}
                     className="flex items-start space-x-4 group"
+                    target={info.label === 'Email' ? undefined : "_blank"}
+                    rel={info.label === 'Email' ? undefined : "noopener noreferrer"}
                   >
                     <div className="w-10 h-10 rounded-lg bg-primary-50 dark:bg-primary-900/20 flex items-center justify-center text-primary-500 group-hover:bg-primary-500 group-hover:text-white transition-all">
                       {info.icon}
@@ -80,6 +82,8 @@ const Contact: React.FC<SectionProps> = ({ id }) => {
                       key={idx}
                       href={social.href}
                       className="w-10 h-10 rounded-lg border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:border-primary-500 hover:text-primary-500 transition-all"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       {social.icon}
                     </a>

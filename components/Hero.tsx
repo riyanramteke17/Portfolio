@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, ChevronRight, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, ChevronRight, Github, Linkedin, Mail, Download } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState('');
@@ -79,9 +79,17 @@ const Hero: React.FC = () => {
               </a>
               <a
                 href="#contact"
-                className="px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-xl shadow-md border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all"
+                className="px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-xl shadow-md border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all flex items-center group"
               >
                 Let's Talk
+              </a>
+              <a
+                href="/cv.pdf"
+                download
+                className="px-6 py-3 bg-primary-100 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 font-bold rounded-xl hover:bg-primary-200 dark:hover:bg-primary-900/40 transition-all flex items-center group text-sm"
+              >
+                Download CV
+                <Download className="ml-2 group-hover:translate-y-1 transition-transform" size={18} />
               </a>
             </div>
 
@@ -98,6 +106,8 @@ const Hero: React.FC = () => {
                     href={social.href}
                     whileHover={{ scale: 1.1, y: -2 }}
                     className="p-3 bg-white dark:bg-slate-800 rounded-lg shadow-sm text-slate-600 dark:text-slate-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {social.icon}
                   </motion.a>
